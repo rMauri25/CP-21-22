@@ -1,0 +1,15 @@
+mpicc pisec.c -lm -o pisec 
+lamboot 
+mpirun -np 4 ./pisec
+
+mpicc pi.c -lm -o pi 
+lamboot 
+mpirun -np 4 ./pi
+
+mpicc picol1.c -lm -o picol1
+lamboot 
+mpirun -np 4 ./picol1
+
+mpicc picol2.c -lm -o picol2
+lamboot 
+mpirun -np 4 ./picol2

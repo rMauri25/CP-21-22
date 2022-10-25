@@ -1,0 +1,3 @@
+mpicc mmpar.c -lm -o mmpar
+lamboot
+mpirun -np 7 ./mmpar
